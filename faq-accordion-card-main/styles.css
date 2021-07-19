@@ -1,0 +1,144 @@
+:root{
+    --dark-blue: hsl(238, 29%, 16%);
+    --dark-red: hsl(14, 88%, 65%);
+
+/* Gradient */
+
+ --violet: hsl(273, 75%, 66%);
+ --bg-blue: hsl(240, 73%, 65%);
+
+/*### Neutral
+
+#### Text */
+
+--dark-text: hsl(237, 12%, 33%);
+--text: hsl(240, 6%, 50%);
+
+/*DividerBlue */
+
+--div-blue: hsl(240, 5%, 91%);
+
+--card-height: 300px;
+--card-width: 600px;
+
+font-size: 12px;
+font-family: Kumbh Sans;
+font-weight:400;
+
+background-image:linear-gradient(to bottom, var(--violet), var(--bg-blue) );
+background-repeat: no-repeat;
+}
+
+
+.img{
+    background-image: url('images/illustration-woman-online-desktop.svg'), url('images/bg-pattern-desktop.svg');
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: var(--card-height), calc(var(--card-width) /2);
+    background-position-x: 110%;
+    background-position-y:auto;
+    width:50%;
+}
+
+#logo{
+    display:none;
+}
+
+.questionCard{
+    padding: 30px;
+    width:50%;
+    overflow: hidden;
+}
+
+.question{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--div-blue);
+}
+
+.question img{
+    float: right;
+
+}
+
+#box{
+    position:absolute;
+    left: -100px;
+    top: calc((var(--card-height) /2) - 60px);
+}
+.bold{
+    font-weight:700;
+}
+
+.flipped{
+    transform: rotate(180deg);
+}
+.card{
+    height:var(--card-height);
+    width: var(--card-width);
+    margin: 200px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display:flex;
+    background-color: white;
+    position: relative;
+    
+}
+
+.question p{
+    font-size: 9px;
+    color: var(--text);
+    display:none;
+}
+
+.title:hover{
+    color: var(--dark-red);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 690px){
+
+    :root{
+    --card-height: 500px;
+    --card-width: 300px;
+    }
+
+    .card{
+        height: var(--card-height);
+        width: var(--card-width);
+        flex-direction: column;
+        margin: 50px auto;
+        
+
+    }
+
+    .img{
+        height: 120px;
+        background-image: url('images/bg-pattern-mobile.svg');
+        background-position-x: 60%;
+        background-position-y: 0px;
+        background-size: 85%;
+        width:100%;
+    }
+
+    #box{
+        left: 0;
+        display: none;
+    }
+
+    #logo{
+        display:block;
+        position: absolute;
+        left: 10px;
+        top: -100px;
+    }
+
+    .questionCard{
+        width:80%;
+    }
+
+    .faq{
+        text-align: center;
+    }
+
+}
+

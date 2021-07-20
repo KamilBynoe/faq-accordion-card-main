@@ -65,10 +65,13 @@ How can I make one click bold the question, show the answer, and flip the approp
 
 #### Creating the Composite Image
  
- The image on the left side of the car is actually a composite image with three parts. A box, a woman standing on a carpet looking at a screen, and a background graphic. In order to have this image fit on the screen in the box as necessary, these parts had to be scaled and moved separately to fully create the image that we want.
+ The image on the left side of the card is actually a composite image with three parts. A box, a woman standing on a carpet looking at a screen, and a background graphic. In order to have this image fit on the screen in the box as necessary, these parts had to be scaled and moved separately to fully create the image that we want.
 
  How do you scale the image?
  How do you move the box?
+
+ The mobile image comes with the box. The desktop image doesn't come with the box. 
+ The mobile image overlaps the bounds of the card, the desktop image is within the bounds of the card, but the box overlaps.
  
 
 
